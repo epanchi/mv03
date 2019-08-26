@@ -1,20 +1,31 @@
 
 body {
+	/*font-family: ;*/
 }
 header {
-	text-align: center;
 	background-color: #333;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	left: 10%;
+	width: 80%;
 	height: 50px;
-	display: flex;
-	
+	z-index: 100;
 }
-
 #header-img {
+	display: inline;
 	height: 50px;
 	width: 50px;
+	float: left;
+}
+nav {
+	display: inline;
+	margin: 10px 10px 0 0;
+	float: right;
+}
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 10px;
 }
 div {
 	display: flex;
@@ -28,19 +39,32 @@ section {
 	width: 80%;
 	height: 300px;
 	margin: 20px auto;
+	text-align: center;
 }
 
-
 video {
-	height: 200px;
+	height: 100px;
 }
 
 #container{
 	padding-top:50px;
 }
-
+#section3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+#section3 p {
+	background-color: blue;
+	width: 80px;
+	margin: 15px;
+	height: 20px;
+}
 @media screen and (max-width: 992px) {
 	body {
 	  background-color: gold ;
+	}
+	#section3 {
+		display: inline-block;
 	}
   }
